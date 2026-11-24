@@ -15,6 +15,7 @@ import {
   X,
   Zap,
 } from 'lucide-react'
+import { Analytics } from '@vercel/analytics/react'
 
 type Option = { label: string; detail: string; value: string }
 type LabStep = { eyebrow: string; title: string; description: string; options: Option[] }
@@ -533,6 +534,7 @@ export default function App() {
       </main>
       <Contact />
       <a className="back-to-top" href="#home" aria-label="Back to top"><MoveUpRight size={17} /></a>
+      <Analytics />
     </>
   )
 }
